@@ -1,0 +1,15 @@
+
+AddDefaultCharset utf-8
+AddCharset utf-8 *
+<IfModule mod_charset.c>
+CharsetSourceEnc utf-8
+CharsetDefault utf-8
+</IfModule>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
+php_value max_execution_time 1000
+php_value max_input_time 1000
+php_value upload_max_filesize 100M
+php_value post_max_size 100M

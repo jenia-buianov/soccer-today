@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@font-face{font-family:'Montserrat';src:url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Regular-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Regular-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Regular-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Regular-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Regular-Russian.svg#pt_sansregular") format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:'Montserrat';src:url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Bold-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Bold-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Bold-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Bold-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Bold-Russian.svg#pt_sansbold") format("svg");font-weight:700;font-style:normal}
+@font-face{font-family:'Oswald';src:url("http://layout.eurosport.com/i/v8/fonts/Oswald-Regular.eot");src:url("http://layout.eurosport.com/i/v8/fonts/Oswald-Regular.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Regular.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Regular.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Regular.svg#Oswald-Regular") format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:'Oswald';src:url("http://layout.eurosport.com/i/v8/fonts/Oswald-Bold.eot");src:url("http://layout.eurosport.com/i/v8/fonts/Oswald-Bold.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Bold.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Bold.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Bold.svg#Oswald-Bold") format("svg");font-weight:700;font-style:normal}
+@font-face{font-family:'Open Sans';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Regular-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Regular-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Regular-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Regular-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Regular-Russian.svg#open_sansregular") format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:'Open Sans';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Italic-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Italic-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Italic-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Italic-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Italic-Russian.svg#open_sansitalic") format("svg");font-weight:400;font-style:italic}
+@font-face{font-family:'Open Sans';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Bold-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Bold-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Bold-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Bold-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Bold-Russian.svg#open_sansbold") format("svg");font-weight:700;font-style:normal}
+@font-face{font-family:'Open Sans';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-BoldItalic-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-BoldItalic-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-BoldItalic-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-BoldItalic-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-BoldItalic-Russian.svg#open_sansbold_italic") format("svg");font-weight:700;font-style:italic}
+@font-face{font-family:'Open Sans Condensed';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLight-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLight-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLight-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLight-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLight-Russian.svg#open_sans_condensedlight") format("svg");font-weight:300;font-style:normal}
+@font-face{font-family:'Open Sans Condensed';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLightItalic-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLightItalic-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLightItalic-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLightItalic-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLightItalic-Russian.svg#open_sansCnLtIt") format("svg");font-weight:300;font-style:italic}
+@font-face{font-family:'Open Sans Condensed';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondBold-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondBold-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondBold-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondBold-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondBold-Russian.svg#open_sans_condensedbold") format("svg");font-weight:700;font-style:normal}
+@font-face{font-family:'EuroSportFont';src:url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.eot");src:url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.svg#030115_EurosportFont") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:'Montserrat';src:url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Regular-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Regular-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Regular-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Regular-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Regular-Russian.svg#pt_sansregular") format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:'Montserrat';src:url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Bold-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Bold-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Bold-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Bold-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/PTSans-Bold-Russian.svg#pt_sansbold") format("svg");font-weight:700;font-style:normal}
+@font-face{font-family:'Oswald';src:url("http://layout.eurosport.com/i/v8/fonts/Oswald-Regular.eot");src:url("http://layout.eurosport.com/i/v8/fonts/Oswald-Regular.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Regular.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Regular.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Regular.svg#Oswald-Regular") format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:'Oswald';src:url("http://layout.eurosport.com/i/v8/fonts/Oswald-Bold.eot");src:url("http://layout.eurosport.com/i/v8/fonts/Oswald-Bold.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Bold.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Bold.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/Oswald-Bold.svg#Oswald-Bold") format("svg");font-weight:700;font-style:normal}
+@font-face{font-family:'Open Sans';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Regular-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Regular-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Regular-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Regular-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Regular-Russian.svg#open_sansregular") format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:'Open Sans';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Italic-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Italic-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Italic-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Italic-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Italic-Russian.svg#open_sansitalic") format("svg");font-weight:400;font-style:italic}
+@font-face{font-family:'Open Sans';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Bold-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Bold-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Bold-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Bold-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-Bold-Russian.svg#open_sansbold") format("svg");font-weight:700;font-style:normal}
+@font-face{font-family:'Open Sans';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-BoldItalic-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-BoldItalic-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-BoldItalic-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-BoldItalic-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-BoldItalic-Russian.svg#open_sansbold_italic") format("svg");font-weight:700;font-style:italic}
+@font-face{font-family:'Open Sans Condensed';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLight-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLight-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLight-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLight-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLight-Russian.svg#open_sans_condensedlight") format("svg");font-weight:300;font-style:normal}
+@font-face{font-family:'Open Sans Condensed';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLightItalic-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLightItalic-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLightItalic-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLightItalic-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondLightItalic-Russian.svg#open_sansCnLtIt") format("svg");font-weight:300;font-style:italic}
+@font-face{font-family:'Open Sans Condensed';src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondBold-Russian.eot");src:url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondBold-Russian.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondBold-Russian.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondBold-Russian.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/russian/OpenSans-CondBold-Russian.svg#open_sans_condensedbold") format("svg");font-weight:700;font-style:normal}
+@font-face{font-family:'EuroSportFont';src:url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.eot");src:url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.svg#030115_EurosportFont") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:'EuroSportFont';src:url("http://themehelite.com/themeforest/malin/fonts/ionicons.ttf?v=2.0.0");src:url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.eot#iefix") format("embedded-opentype"),url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.woff") format("woff"),url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.ttf") format("truetype"),url("http://layout.eurosport.com/i/v8/fonts/EuroSportFont.svg#030115_EurosportFont") format("svg");font-weight:normal;font-style:normal}
+body {padding:0px; margin:0px; background-color:#EEE; font-size:1em; color:#333333;font-family:'Montserrat'; cursor:default;}
+#erorr{border-radius: 7px;
+webkit-border-radius: 7px;
+moz-border-radius: 7px;
+khtml-border-radius: 7px;}
+#error medium{background-color:#FF6A6A; color:#000; font-size:20px;border-radius: 7px;
+webkit-border-radius: 7px;
+moz-border-radius: 7px;
+khtml-border-radius: 7px;width:100%; display:block; padding:20px; text-align:center;}
+#error low{background-color:#FFAEAE; color:#000; font-size:22px;border-radius: 7px;
+webkit-border-radius: 7px;
+moz-border-radius: 7px;
+khtml-border-radius: 7px;width:100%; display:block; padding:20px; text-align:center;}
+#error hight{background-color:#FF0404; color:#000; font-size:28px; width:100%; display:block; padding:20px; text-align:center;border-radius: 7px;
+webkit-border-radius: 7px;
+moz-border-radius: 7px;
+khtml-border-radius: 7px;}
+system_error {font-size:3em; color:#FF0404; text-align:center;font-family:'Montserrat'; display:block; padding-top:10%; background-color:#EEE; height:100%; position:absolute; width:100%; background-image:url(images/system/error.png); background-position:center, 7% top; background-repeat:no-repeat;}
+.code {background-color:#FFF;border-radius: 7px;
+webkit-border-radius: 7px;
+moz-border-radius: 7px;
+khtml-border-radius: 7px; padding:7px; font-size:22px; border:1px solid #DBDBDB; width:auto; text-align:center}
+.code:focus, .code:hover { border-color:#004891; color:#333;} 
+system_error font {color:#383838; font-size:17px; font-weight:bold;font-family:'Ionicons'; cursor:pointer;}
+system_error font:hover, system_error font:focus {color:#000;font-family:'Ionicons';}
+.loading-part {
+  position: fixed;
+  background: #f2f3f7;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999; }
+  .loading-part .loader-part {
+    min-height: 100%;
+    min-width: 100%; }
+    .loading-part .loader-part .loader-circle {
+      width: 32px;
+      height: 32px;
+      clear: both;
+      margin: 0 auto 5px;
+      position: relative;
+      top: calc(50% - 16px);
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      border-top: 16px rgba(43, 45, 53, 0.75) solid;
+      border-left: 16px rgba(43, 45, 53, 0.25) solid;
+      border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+      border-right: 16px rgba(43, 45, 53, 0.25) solid;
+      -webkit-animation: spSlices 1s infinite linear;
+      -moz-animation: spSlices 1s infinite linear;
+      animation: spSlices 1s infinite linear; }
+@-webkit-keyframes spSlices {
+  0% {
+    border-top: 16px rgba(43, 45, 53, 0.75) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; }
+  25% {
+    border-top: 16px rgba(43, 45, 53, 0.25) solid;
+    border-right: 16px rgba(43, 45, 53, 0.75) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; }
+  50% {
+    border-top: 16px rgba(43, 45, 53, 0.25) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.75) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; }
+  75% {
+    border-top: 16px rgba(43, 45, 53, 0.25) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.75) solid; }
+  100% {
+    border-top: 16px rgba(43, 45, 53, 0.75) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; } }
+@-moz-keyframes spSlices {
+  0% {
+    border-top: 16px rgba(43, 45, 53, 0.75) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; }
+  25% {
+    border-top: 16px rgba(43, 45, 53, 0.25) solid;
+    border-right: 16px rgba(43, 45, 53, 0.75) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; }
+  50% {
+    border-top: 16px rgba(43, 45, 53, 0.25) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.75) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; }
+  75% {
+    border-top: 16px rgba(43, 45, 53, 0.25) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.75) solid; }
+  100% {
+    border-top: 16px rgba(43, 45, 53, 0.75) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; } }
+@keyframes spSlices {
+  0% {
+    border-top: 16px rgba(43, 45, 53, 0.75) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; }
+  25% {
+    border-top: 16px rgba(43, 45, 53, 0.25) solid;
+    border-right: 16px rgba(43, 45, 53, 0.75) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; }
+  50% {
+    border-top: 16px rgba(43, 45, 53, 0.25) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.75) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; }
+  75% {
+    border-top: 16px rgba(43, 45, 53, 0.25) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.75) solid; }
+  100% {
+    border-top: 16px rgba(43, 45, 53, 0.75) solid;
+    border-right: 16px rgba(43, 45, 53, 0.25) solid;
+    border-bottom: 16px rgba(43, 45, 53, 0.25) solid;
+    border-left: 16px rgba(43, 45, 53, 0.25) solid; } }
+    .loading-part .loader-part .loader-text {
+      color: rgba(10, 26, 36, 0.8);
+      position: absolute;
+      top: calc(50% + 24px);
+      padding-left: 6px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 5px; }
+#background {background-image:url(images/system/b1.png); background-repeat:repeat; width:100%; height:100%; position:fixed; left:0px; top:0px; display:none;}
+.ui-autocomplete{font-size:11px;color:white;background-color:#8bc34a;border-color:#039be5}
+.ui-menu-item{color:white;background-color:#8bc34a;}
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #999999;
+	background:#FF8346;
+	font-weight: normal;
+	color: white;
+}
+modal {
+	position:fixed;
+	left:10%;
+	top:10%;
+	width:80%;
+	height:80%;
+	background-color:#fff;
+	color:#000;
+}
+background {
+	background:rgba(0,0,0,0.8);
+	background-repeat:repeat;
+	display:none;
+	width:100%; height:100%; position:fixed; left:0px; top:0px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
